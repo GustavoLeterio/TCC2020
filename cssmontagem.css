@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background: #000;
+  min-height: 100vh;
+  height: 100%;
+}
+
+header {
+  list-style-type: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 10000;
+}
+
+header.sticky {
+  padding: 5px 80px;
+  background: rgb(46, 11, 65);
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  text-shadow: 0 0 5px;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 1000px;
+  transition: 0.3s;
+  font-family: CaviarDreams;
+  font-size: 1.5vw;
+}
+
+.sec {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  background: url(background.png);
+  background-size: cover;
+}
+
+.sec .frase {
+  padding-top: 150px;
+  justify-content: center;
+  color: #fff;
+  max-width: 85vw;
+  text-align: center;
+  font-size: 30px;
+  font-family: CaviarDreams;
+}
+
+.sec .frase span {
+  text-shadow: 0 0 4px #ba8cff;
+  color: #ba8cff;
+  font-family: Harukaze;
+  font-size: 95px;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.sec .box-body {
+  max-height: 100%;
+  display: grid;
+  min-height: 100vh;
+}
+
+.sec .box {
+  background: #060012;
+  position: relative;
+  width: 80vw;
+  height: 270px;
+  display: grid;
+  grid-template-columns: 270px auto;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.sec .box .imgBx {
+  background: #060012;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1
+}
+
+.sec .box .imgBx img {
+  width: 250px;
+  transition: 0.5s;
+}
+
+.sec .box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+}
+
+.sec .box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  filter: blur(40px);
+}
+
+.sec .box:before,
+.sec .box:after {
+  background: linear-gradient(135deg, #89ff00, #010615, #00BCD4);
+}
+
+.sec .box:nth-child(2):before,
+.sec .box:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.sec .box:nth-child(3):before,
+.sec .box:nth-child(3):after {
+  background: linear-gradient(120deg, #943dff, #010615, #ff03cd);
+}
+
+.sec .box:nth-child(4):before,
+.sec .box:nth-child(4):after {
+  background: linear-gradient(35deg, #b005ff, #010615, #00BCD4);
+}
+
+.sec .box:nth-child(5):before,
+.sec .box:nth-child(5):after {
+  background: linear-gradient(35deg, #00fbff, #010615, #9305ff);
+}
+
+.sec .box:nth-child(6):before,
+.sec .box:nth-child(6):after {
+  background: linear-gradient(135deg, #ff6600, #010615, #ff0000);
+}
+
+.sec .box:nth-child(7):before,
+.sec .box:nth-child(7):after {
+  background: linear-gradient(235deg, #89ff00, #010615, #bbff6b);
+}
+
+.sec .box:nth-child(8):before,
+.sec .box:nth-child(8):after {
+  background: linear-gradient(315deg, #ff03cd, #010615, #ff0000);
+}
+
+.content-wrapper {
+  background: #060012;
+  z-index: 1;
+}
+
+.sec .box .content {
+  position: relative;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 5px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sec .box .content .caracteristicas {
+  height: 80%;
+  color: white;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: 0;
+  font-family: CaviarDreams;
+  max-width: 95%;
+  text-align: justify;
+}
+
+.sec .box .content .caracteristicas .selecioneoseu {
+  color: rgb(222, 193, 252);
+  font-family: CaviarDreams;
+}
+
+#caracteristicasMemoriaram {
+  height: 70%;
+}
+
+.select {
+  max-width: 40px;
+}
+
+.sec .box .content .selectComponente {
+  font-size: 30px;
+  font-family: CaviarDreams;
+  color: white;
+  background-color: #060012;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.2s;
+    margin-bottom:10%;
+}
+
+.sec .box .content .selectComponente option {
+  font-size: 25px;
+}
+
+.selectComponente:hover {
+  cursor: pointer;
+  text-shadow: 0 0 10px white;
+
+}
+
+.preço {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translatey(-50%);
+  top: 90%;
+  left: 86%;
+  font-family: CaviarDreams;
+  font-size: 28px;
+}
+
+.quantiadepeças {
+  color: white;
+  font-family: CaviarDreams;
+  font-size: 30px;
+}
+
+.slider {
+  vertical-align: middle;
+  margin-left: 1vw;
+  -webkit-appearance: none;
+  height: 5px;
+  background: #dddddd;
+  outline: none;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 100px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  border-radius: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: rgb(194, 136, 250);
+}
+
+.slider::-moz-range-thumb {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background: rgb(232, 208, 255);
+  cursor: pointer;
+}
+.sec .button {
+  margin: 5%;
+  margin-bottom: 7%;
+  padding: 24px 48px;
+  color: #fff;
+  text-shadow: 0px 0px 7px #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 55px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: linear-gradient(120deg, #7100ff, #fb00ff);
+  font-family: CaviarDreamsBold;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 50px 5px rgb(145, 40, 209, 0.5);
+}
+
+.button:hover {
+  box-shadow: 0 0 70px 1px rgb(145, 40, 209, 1);
+}
+.alert {
+  position: static;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.closebtn:hover {
+  font-size: 45px;
+}
+.footer {
+  background-color: rgb(27, 20, 34);
+  overflow: hidden;
+}
+
+.footer .redes {
+  display: table-row;
+}
+
+.footer .redes li {
+  display: table-row;
+  list-style: none;
+  padding: 0 80px;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: CaviarDreams;
+}
+
+.footer .redes li a {
+  text-decoration: none;
+  color: white;
+  font-family: CaviarDreams;
+}
+
+.footer .redes li a img {
+  vertical-align: middle;
+}
+
+.footer .tcc {
+  float: right;
+  padding: 3% 7.5% 0 0;
+}
+
+.footer .tcc h2 {
+  color: white;
+  font-size: 50px;
+  font-family: CaviarDreams;
+  float: right;
+  vertical-align: middle;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width:1280px) {
+  .footer .redes li {
+    font-size: 35px;
+  }
+
+  .footer .tcc h2 {
+    font-size:35px;
+  }
+
+  .footer .tcc {
+    padding: 7% 4.5% 0 0;
+  }
+
+  .sec .frase {
+    font-size: 25px;
+  }
+
+  .sec .box .content .caracteristicas {
+    font-size: 22px;
+  }
+
+  .sec .frase span {
+    line-height: 80px;
+    font-size: 90px;
+  }
+  .preço{
+      left: 77%;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .footer .redes li {
+    font-size: 25px;
+  }
+
+  .sec .box .content .selectComponente {
+    font-size: 25px;
+  }
+
+  .sec .box .content .preço {
+    left: 67%;
+  }
+
+  .quantiadepeças {
+    font-size: 25px;
+  }
+
+  .sec .box .content .caracteristicas {
+    font-size: 20px;
+  }
+
+  .footer .tcc h2 {
+    font-size: 30px;
+  }
+
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+
+  .sec .frase {
+    font-size: 25px;
+  }
+
+  .sec .frase span {
+    font-size: 100px;
+  }
+
+  header {
+    padding: 25px 100px;
+  }
+
+  header.sticky {
+    padding: 10px 80px;
+  }
+
+  header .logo img {
+    width: 92%;
+  }
+
+  header ul li a {
+    font-size: 1.85vw;
+  }
+}
+
+@media only screen and (max-width:980px) {
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+
+  .sec .box-body {
+    min-height: auto;
+  }
+
+  .sec .frase {
+    font-size: 25px;
+  }
+
+  .sec .box .content .selectComponente {
+    font-size: 30px;
+  }
+
+  .sec .box .content .caracteristicas {
+    font-size: 20px;
+  }
+
+  .sec .box .content .caracteristicas .preço {
+    top: 85%;
+    left: 73%;
+  }
+
+  .quantiadepeças {
+    font-size: 25px;
+  }
+
+  .sec .frase span {
+    font-size: 100px;
+  }
+
+  header {
+    padding: 25px 100px;
+  }
+
+  header.sticky {
+    padding: 10px 80px;
+  }
+
+  header .logo img {
+    width: 92%;
+  }
+
+  header ul li a {
+    font-size: 1.85vw;
+  }
+
+  .sec .box {
+    width: 90vw;
+    grid-template-columns: 200px auto;
+    height: 200px;
+  }
+
+  .sec .box .imgBx img {
+    max-width: 180px;
+  }
+
+  #caracteristicasMemoriaram {
+    font-size: 17px;
+  }
+  .button{
+    text-align: center;
+    width: 40vw;
+  }
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url('CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url('CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: Harukaze;
+  src: url('Harukaze.ttf');
+}
+
+@font-face {
+  font-family: NeonTubes;
+  src: url('NeonTubes2.otf');
+}

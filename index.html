@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Purple Wolf</title>
+  <link rel="icon" type="image/jpg" href="logos/Logo do Titulo.png" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><img src="logos/Logo com Nome.png" alt="Página Inicial" width="300vw;"></a>
+    <ul>
+      <li><a href="montagem.php">Montagem</a></li>
+      <li><a href="sugestoes.html">Sugestões</a></li>
+      <li><a href="quemsomos.html">Quem Somos</a></li>
+    </ul>
+  </header>
+  <section class="sec">
+    <div id="bgslider">
+      <figure>
+        <a href="basic.html"><img srcset="sliderImages/mobile_basic.png 1920w,sliderImages/linha_basic.png 750w" sizes="(min-width:750px)750px, (max-width: 751px) 750px" src="linha_basic_pc.png" alt="Slider"></a>
+        <a href="render.html"><img srcset="sliderImages/mobile_render.png 1920w,sliderImages/linha_render.png 750w" sizes="(min-width:750px)750px, (max-width: 751px) 750px" src="linha_basic_pc.png" alt="Slider"></a>
+        <a href="gamer.html"><img srcset="sliderImages/mobile_gaming.png 1920w,sliderImages/linha_gaming.png 750w" sizes="(min-width:750px)750px, (max-width: 751px) 750px" src="linha_basic_pc.png" alt="Slider"></a>
+        <a href="pro.html"><img srcset="sliderImages/mobile_gamerpro.png 1920w,sliderImages/linha_gamerpro.png 750w" sizes="(min-width:750px)750px, (max-width: 751px) 750px" src="linha_basic_pc.png" alt="Slider"></a>
+        <a href="montagem.php"><img srcset="sliderImages/mobile_custom.png 1920w,sliderImages/linha_custom.png 750w" sizes="(min-width:750px)750px, (max-width: 751px) 750px" src="linha_basic_pc.png" alt="Slider"></a>
+      </figure>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="container">Com tantas novidades e lançamentos de hardwares podemos nos perder, para isso, a <span> PurP le WOlF</span> está aqui para ajudar!<br>
+      Comece agora a explorar diversas opções incriveis com valores ainda melhores! <br><br>Clique já e comece sua busca!<br>
+      <a href="montagem.php" class="button">Monte Já!</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <ul class="tcc">
+      <h2>Projeto TCC<br>
+        ETEC Jacinto Ferreira de Sá<br>
+        SP, Ourinhos 2020</h2>
+      </li>
+    </ul>
+    <ul class="redes">
+      <li><a href="www.facebook.com" target="_blank"><img src="logos/facebooklogo.png" width="100px">www.facebook.com/PurpleWolfOficial</a></li>
+      <li><a href="www.instagram.com" target="_blank"><img src="logos/instagramlogo.png" width="100px">www.instagram.com/PurpleWolfOficial</a></a></li>
+      <li><a href="www.twitter.com" target="_blank"><img src="logos/twitterlogo.png" width="100px">www.twitter.com/PurpleWolfOficial</a></li>
+    </ul>
+  </footer>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
+</body>
+
+</html>

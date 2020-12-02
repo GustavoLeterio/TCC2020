@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background: #000;
+  height: 100%;
+}
+
+header {
+  list-style-type: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 10000;
+}
+
+header.sticky {
+  padding: 5px 80px;
+  background: rgb(46, 11, 65);
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  text-shadow: 0 0 5px;
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 1000px;
+  transition: 0.3s;
+  font-family: CaviarDreams;
+  font-size: 1.5vw;
+}
+
+.sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url(fotos Sugestões/backgroundsuges.png);
+  background-size: cover;
+}
+
+.sec .frase {
+  padding-top: 200px;
+  justify-content: center;
+  color: #fff;
+  max-width: 85vw;
+  text-align: center;
+  font-size: 30px;
+  font-family: CaviarDreams;
+}
+
+.sec .frase span {
+  text-shadow: 0 0 4px #ba8cff;
+  color: #ba8cff;
+  font-family: Harukaze;
+  font-size: 200px;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.sec .box-body {
+  padding-right: 2vw;
+  padding-top: 5vh;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 250px 250px;
+  row-gap: 8vh;
+  column-gap: 3vw;
+  align-items: center;
+  display: grid;
+}
+
+.sec .box {
+  max-width: 100vw;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.sec .box .imgBx {
+  background: #060012;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1
+}
+
+.sec .box .imgBx img {
+  max-width: 100%;
+  opacity: 0.65;
+  transition: 0.5s;
+}
+
+.sec .box:hover .imgBx img {
+  opacity: 1;
+}
+
+.sec .box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+}
+
+.sec .box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(35deg, #0091fa, #010615, #0091fa);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+  background: linear-gradient(35deg, #8503ff, #010615, #8503ff);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+  background: linear-gradient(35deg, #ff7700, #010615, #ff7700);
+}
+
+.box:nth-child(4):before,
+.box:nth-child(4):after {
+  background: linear-gradient(35deg, #ff0000, #010615, #ff0000);
+}
+
+.sec .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sec .box:hover .content {
+  opacity: 1;
+}
+
+.sec .box .content h2 {
+  text-align: center;
+  font-family: CaviarDreamsBold;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.sec .box .content h2 span {
+  font-family: CaviarDreams;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.footer {
+  background-color: rgb(27, 20, 34);
+  overflow: hidden;
+}
+
+.footer .redes {
+  display: table-row;
+}
+
+.footer .redes li {
+  display: table-row;
+  list-style: none;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: CaviarDreams;
+}
+
+.footer .redes li a {
+  text-decoration: none;
+  color: white;
+  font-family: CaviarDreams;
+}
+
+.footer .redes li a img {
+  vertical-align: middle;
+}
+
+.footer .tcc {
+  float: right;
+  padding: 3% 10% 0 0;
+}
+
+.footer .tcc h2 {
+  color: white;
+  font-size: 50px;
+  font-family: CaviarDreams;
+  float: right;
+  vertical-align: middle;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width:1280px) {
+  .footer .redes li {
+    font-size: 35px;
+  }
+
+  .footer .tcc h2 {
+    font-size: 30px;
+  }
+
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+
+  .sec .box-body {
+    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-rows: 250px 250px;
+    padding-top: 3vh;
+  }
+
+  .sec .frase span {
+    font-size: 170px;
+  }
+
+  .sec .box {
+    width: 230px;
+    height: 230px;
+  }
+
+  .sec .frase {
+    padding-top: 180px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .footer .redes li {
+    font-size: 25px;
+  }
+
+  .footer .tcc h2 {
+    font-size: 30px;
+  }
+
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+
+  .sec .box-body {
+    column-gap: 8vw;
+    row-gap: 6vh;
+    padding: 0;
+    padding-top: 3vh;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px;
+  }
+
+  .sec .box {
+    width: 350px;
+    height: 350px;
+  }
+
+  .sec .frase span {
+    font-size: 170px;
+  }
+
+  .sec .frase {
+    padding-top: 180px;
+  }
+
+  header {
+    padding: 25px 100px;
+  }
+
+  header.sticky {
+    padding: 10px 80px;
+  }
+
+  header .logo img {
+    width: 92%;
+  }
+
+  header ul li a {
+    font-size: 1.85vw;
+  }
+}
+
+@media only screen and (max-width:980px) {
+  .sec .frase {
+    padding-top: 230px;
+  }
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+  .sec .frase span {
+    font-size: 220px;
+  }
+
+  .sec .box-body {
+    margin-right: 35px;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    column-gap: 5vw;
+    row-gap: 5vh;
+    padding-top: 5vh;
+    padding-bot: 0;
+  }
+
+  .sec .box {
+    width: 400px;
+    height: 400px;
+  }
+
+
+  header {
+    padding: 25px 100px;
+  }
+
+  header.sticky {
+    padding: 10px 80px;
+  }
+
+  header .logo img {
+    width: 92%;
+  }
+
+  header ul li a {
+    font-size: 1.85vw;
+  }
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url('CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url('CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: Harukaze;
+  src: url('Harukaze.ttf');
+}
