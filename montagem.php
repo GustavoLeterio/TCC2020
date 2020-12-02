@@ -397,11 +397,11 @@ function fonteUpdate() {
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/8.jpg";
+    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/8.png";
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 8); ?>";
     break;
     case '9':
-    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/9.jpg";
+    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/9.png";
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 9); ?>";
     break;
     case '10':
@@ -421,7 +421,7 @@ function fonteUpdate() {
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 13); ?>";
     break;
     case '14':
-    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/14.jpg";
+    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/14.png";
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 14); ?>";
     break;
     case '15':
