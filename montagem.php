@@ -26,6 +26,7 @@ async function killAlert(){
   await sleep(500);
   document.getElementById("alert").style.display = "none";
 }
+
 function verifica(){
   if(placamaeUpdate() == 0){
     document.getElementById("alert").style.display = "inline";
@@ -385,11 +386,11 @@ function fonteUpdate() {
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 4); ?>";
     break;
     case '5':
-    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/5.jpg";
+    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/5.png";
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/6.jpg";
+    document.getElementById('imagemFonte').src = "Fotos dos Componentes/Fonte/6.png";
     document.getElementById("caracteristicasFonte").innerHTML = "<?php fonteAtualiza($id = 6); ?>";
     break;
     case '7':
@@ -741,7 +742,7 @@ function gabineteUpdate() {
                       <span class="closebtn" style="align-items: center;" onclick="this.parentElement.style.display='none';">&times;</span>
                       <div class="alertText" id="alertText">texto a ser alterado</div>
                     </div>
-                    <a class="button" onclick="verifica()">Enviar PC</a>
+                    <a class="button" id="teste" onclick="verifica()">Enviar PC</a>
                     <button type="submit" id="envia" style="display:none;" value="Submit">Enviar PC</button>
                   </form>
                 </section>
