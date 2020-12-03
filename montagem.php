@@ -1,5 +1,4 @@
 
-
 <?php
 include "conexao.php";
 include "funcao.php";
@@ -13,7 +12,7 @@ include "funcao.php";
   <link rel="icon" type="image/png" href="logos/Logo do Titulo.png" />
   <link rel="stylesheet" href="cssmontagemcss.css">
 </head>
-<script>
+<script  type="text/javascript">
 window.addEventListener("scroll", function() {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
@@ -51,7 +50,7 @@ function placamaeUpdate() {
   var select = document.getElementById('placamae');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -81,7 +80,7 @@ function processadorUpdate() {
   var select = document.getElementById('processador');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -151,7 +150,7 @@ function memoriaramUpdate() {
   var select = document.getElementById('memoriaram');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -202,7 +201,7 @@ function hdUpdate() {
   var select = document.getElementById('hd');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -228,7 +227,7 @@ function ssdUpdate() {
   var select = document.getElementById('ssd');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '5':
@@ -270,7 +269,7 @@ function placadevideoUpdate() {
   var select = document.getElementById('placadevideo');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -364,7 +363,7 @@ function fonteUpdate() {
   var select = document.getElementById('fonte');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -435,7 +434,7 @@ function gabineteUpdate() {
   var select = document.getElementById('gabinete');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -503,7 +502,7 @@ function gabineteUpdate() {
             <div class="content">
               <div class="select" id="selectPlacamae">
                 <select class="selectComponente" id="placamae" onChange="placamaeUpdate()" name="placamae">
-                  <option value="0" disabled selected hidden><div class="select" >Placas Mães</div></option>
+                  <option value="1000" disabled selected hidden><div class="select" >Placas Mães</div></option>
                   <option value="1">A320M (RYZEN AM4)</option>
                   <option value="2">B450M (RYZEN AM4)</option>
                   <option value="3">H310M (INTEL 9ª LGA 1151)</option>
@@ -525,7 +524,7 @@ function gabineteUpdate() {
               <div class="content">
                 <div class="select" id="selectProcessador">
                   <select class="selectComponente" id="processador" onChange="processadorUpdate()" name="processador">
-                    <option value="0" disabled selected hidden>Processadores</option>
+                    <option value="1000" disabled selected hidden>Processadores</option>
                     <option disabled>Processadores Ryzen</option>
                     <option value="1">Ryzen 3 3200G</option>
                     <option value="2">Ryzen 3 3300X</option>
@@ -558,7 +557,7 @@ function gabineteUpdate() {
               <div class="content">
                 <div class="select" id="selectMemoriaRam">
                   <select class="selectComponente" id="memoriaram" onChange="memoriaramUpdate()" name="memoriaram">
-                    <option value="0" disabled selected hidden>Memórias Ram</option>
+                    <option value="1000" disabled selected hidden>Memórias Ram</option>
                     <option value="1">HyperX Fury 4GB 2400MHz DDR4</option>
                     <option value="2">HyperX Fury 4GB 2666MHz DDR4</option>
                     <option value="3">HyperX Fury 8GB 2666MHz DDR4</option>
@@ -596,11 +595,12 @@ function gabineteUpdate() {
                 <div class="content">
                   <div class="select" id="selectHd">
                     <select class="selectComponente" id="hd" onChange="hdUpdate()" name="hd">
-                      <option value="0" disabled selected hidden>HDs</option>
+                      <option value="1000" selected hidden>HDs</option>
                       <option value="1">HD Seagate BarraCuda 1TB</option>
                       <option value="2">HD Seagate BarraCuda 2TB</option>
                       <option value="3">HD Western Digital Blue 1TB</option>
                       <option value="4">HD Western Digital Blue 2TB</option>
+                      <option value="1000">Nenhum</option>
                     </select>
                   </div>
                   <div class="caracteristicas" id="caracteristicasHd"> Aqui ficará todos os arquivos que existem em seu computador assim como também programas, drivers e diversas outras coisas que necessitam de armazenamento.
@@ -616,7 +616,7 @@ function gabineteUpdate() {
                   <div class="content">
                     <div class="select" id="selectSSD">
                       <select class="selectComponente" id="ssd" name="ssd" onChange="ssdUpdate()">
-                        <option value="0" disabled selected hidden>SSDs</option>
+                        <option value="1000" selected hidden>SSDs</option>
                         <option value="5">SSD Kingston A400 240G</option>
                         <option value="6">SSD Gibabyte 240G</option>
                         <option value="7">SD Kingston A400 480GB</option>
@@ -625,6 +625,7 @@ function gabineteUpdate() {
                         <option value="10">SSD HP S700 1TB</option>
                         <option value="11">SSD Crucial BX500 1TB</option>
                         <option value="12">SSD WD Green 1TB</option>
+                        <option value="1000">Nenhum</option>
                       </select>
                     </div>
                     <div class="caracteristicas" id="caracteristicasSsd"> O SSD é uma pequena unidade de memória como o HD, comparando os dois percebe-se que o SSD busca os arquivos mais rápído da sua unidade de memória,
@@ -640,7 +641,7 @@ function gabineteUpdate() {
                     <div class="content">
                       <div class="select" id="selectPlacadevideo">
                         <select class="selectComponente" id="placadevideo" onChange="placadevideoUpdate()"name="placadevideo"id="ssd">
-                          <option value="0" disabled selected hidden>Placas de Video</option>
+                          <option value="1000" selected hidden>Placas de Video</option>
                           <option disabled>Placas AMD</option>
                           <option value="1">RX 550 2GB</option>
                           <option value="2">RX 550 4GB</option>
@@ -665,6 +666,7 @@ function gabineteUpdate() {
                           <option value="19">PNY NVIDIA Quadro P1000 4GB</option>
                           <option value="20">PNY NVIDIA Quadro P2000 5GB</option>
                           <option value="21">PNY NVIDIA Quadro RTX 4000 8GB</option>
+                          <option value="1000">Nenhum</option>
                         </select>
                       </div>
                       <div class="caracteristicas" id="caracteristicasPlacadevideo"> Está peça é a favorita dos gamers e designers, ela é basicamente responsável por enviar o vídeo ao seu monitor.
@@ -682,7 +684,7 @@ function gabineteUpdate() {
                       <div class="content">
                         <div class="select" id="selectFonte">
                           <select class="selectComponente"id="fonte" name="fonte" onChange="fonteUpdate()">
-                            <option value="0" disabled selected hidden>Fontes</option>
+                            <option value="1000" disabled selected hidden>Fontes</option>
                             <option disabled>450W</option>
                             <option value="1">EVGA 450W</option>
                             <option value="2">Corsair CV450 450W</option>
@@ -718,7 +720,7 @@ function gabineteUpdate() {
                         <div class="content">
                           <div class="select"id="selectGabinete">
                             <select class="selectComponente" id="gabinete" name="gabinete" onChange="gabineteUpdate()">
-                              <option value="0" disabled selected hidden>Gabinetes</option>
+                              <option value="1000" selected hidden>Gabinetes</option>
                               <option value="1">Aerocool Cylon RGB LED</option>
                               <option value="2">Husky Avalanche</option>
                               <option value="3">Corsair Carbide SPEC-06 TG</option>
@@ -728,6 +730,7 @@ function gabineteUpdate() {
                               <option value="7">K-mex Atlantis IV</option>
                               <option value="8">DeepCool Macube 310 WH</option>
                               <option value="9">Gamdias Talos M1B</option>
+							                <option value="1000">Nenhum</option>
                             </select>
                           </div>
                           <div class="caracteristicas" id="caracteristicasGabinete"> Está é o container que manterá seu computador, nele não só estará a beleza externa do seu computador como também será responsável por manter seu pc frio,
@@ -741,8 +744,8 @@ function gabineteUpdate() {
                       <div class="alertText" id="alertText">texto a ser alterado</div>
                     </div>
                     <a class="button" id="teste" onclick="verifica()">Enviar PC</a>
-                    <button type="submit" id="envia" style="display:none;" value="Submit">Enviar PC</button>
-                  </form>
+                    <button type="submit" style="display:none;" id="envia"  value="Submit">Enviar PC</button>
+
                 </section>
                 <footer class="footer">
                   <ul class="tcc">
@@ -758,4 +761,3 @@ function gabineteUpdate() {
                   </ul>
                 </footer>
               </body>
-              </html>
