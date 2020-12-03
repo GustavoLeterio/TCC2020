@@ -10,7 +10,7 @@ include "funcao.php";
   <meta charset="utf-8">
   <title>Purple Wolf</title>
   <link rel="stylesheet" href="/css/master.css">
-  <link rel="icon" type="image/jpg" href="logos/Logo do Titulo.png" />
+  <link rel="icon" type="image/png" href="logos/Logo do Titulo.png" />
   <link rel="stylesheet" href="cssmontagemcss.css">
   <script src="jquery-3.5.1.min.js"></script>
 </head>
@@ -86,19 +86,19 @@ function processadorUpdate() {
     return 0;
     break;
     case '1':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen3-3200g.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen3-3200g.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 1); ?>";
     break;
     case '2':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen3-3300x.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen3-3300x.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen5-2600x.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen5-2600x.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen5-3400g.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen5-3400g.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 4); ?>";
     break;
     case '5':
@@ -106,44 +106,43 @@ function processadorUpdate() {
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen7-3700x.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen7-3700x.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen9-3900x.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/ryzen9-3900x.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I3-9100f.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I3-9100f.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 8); ?>";
     break;
     case '9':
-    processadorAtualiza
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I3-10100.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I3-10100.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 9); ?>";
     break;
     case '10':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I5-9400F.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I5-9400F.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 10); ?>";
     break;
     case '11':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I5-10400.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I5-10400.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 11); ?>";
     break;
     case '12':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I7-9700K.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I7-9700K.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 12); ?>";
     break;
     case '13':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I7-10700.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I7-10700.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 13); ?>";
     break;
     case '14':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I9-9900K.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I9-9900K.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 14); ?>";
     break;
     case '15':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I9-10900K.jpg";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I9-10900.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 15); ?>";
     break;
   }
@@ -157,43 +156,43 @@ function memoriaramUpdate() {
     return 0;
     break;
     case '1':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 1); ?>";
     break;
     case '2':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 4); ?>";
     break;
     case '5':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/6.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/6.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/7.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/7.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/8.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/8.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 8); ?>";
     break;
     case '9':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/9.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/9.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 9); ?>";
     break;
     case '10':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/10.jpg";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/10.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 10); ?>";
     break;
   }
@@ -216,11 +215,11 @@ function hdUpdate() {
     document.getElementById("caracteristicasHd").innerHTML = "<?php hdAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemHd').src = "Fotos dos Componentes/Hds/3.jpg";
+    document.getElementById('imagemHd').src = "Fotos dos Componentes/Hds/3.png";
     document.getElementById("caracteristicasHd").innerHTML = "<?php hdAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemHd').src = "Fotos dos Componentes/Hds/4.jpg";
+    document.getElementById('imagemHd').src = "Fotos dos Componentes/Hds/4.png";
     document.getElementById("caracteristicasHd").innerHTML = "<?php hdAtualiza($id = 4); ?>";
     break;
   }
@@ -234,35 +233,35 @@ function ssdUpdate() {
     return 0;
     break;
     case '5':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Kingston.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Kingston.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Gibabyte.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Gibabyte.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Kingston.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/Kingston.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/crucialBX.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/crucialBX.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 8); ?>";
     break;
     case '9':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/sandisk.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/sandisk.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 9); ?>";
     break;
     case '10':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/HP.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/HP.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 10); ?>";
     break;
     case '11':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/crucialBX.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/crucialBX.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 11); ?>";
     break;
     case '12':
-    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/WDGREEN.jpg";
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/SSDs/WDGREEN.png";
     document.getElementById("caracteristicasSsd").innerHTML = "<?php ssdAtualiza($id = 12); ?>";
     break;
   }
@@ -276,7 +275,7 @@ function placadevideoUpdate() {
     return 0;
     break;
     case '1':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/rx550-2gb.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/rx550-2gb.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 1); ?>";
     break;
     case '2':
@@ -284,27 +283,27 @@ function placadevideoUpdate() {
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX570-4GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX570-4GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX570-8GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX570-8GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 4); ?>";
     break;
     case '5':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX580-8GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX580-8GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5500XT-4GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5500XT-4GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5500XT-8GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5500XT-8GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5700XT-8GB.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RX5700XT-8GB.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 8); ?>";
     break;
     case '9':
@@ -328,7 +327,7 @@ function placadevideoUpdate() {
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 13); ?>";
     break;
     case '14':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RTX_2060_6GB_GDDR6.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/RTX_2060_6GB_GDDR6.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 14); ?>";
     break;
     case '15':
@@ -344,19 +343,19 @@ function placadevideoUpdate() {
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 17); ?>";
     break;
     case '18':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/18.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/18.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 18); ?>";
     break;
     case '19':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/19.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/19.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 19); ?>";
     break;
     case '20':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/20.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/20.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 20); ?>";
     break;
     case '21':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/21.jpg";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/21.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 21); ?>";
     break;
   }
@@ -441,39 +440,39 @@ function gabineteUpdate() {
     return 0;
     break;
     case '1':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/1.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/1.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 1); ?>";
     break;
     case '2':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/2.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/2.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/3.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/3.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/4.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/4.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 4); ?>";
     break;
     case '5':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/5.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/5.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/6.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/6.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/7.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/7.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/8.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/8.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 8); ?>";
     break;
     case '9':
-    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/9.jpg";
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/gabinete/9.png";
     document.getElementById("caracteristicasGabinete").innerHTML = "<?php gabineteAtualiza($id = 9); ?>";
     break;
   }

@@ -2,11 +2,6 @@
 include "conexao.php";
 include "funcao.php";
 
-
-
-
-
-
 $final=0;
 
 $placamae=$_POST['placamae'];
@@ -67,44 +62,36 @@ echo "<br>";
 		$final = $final + ($s*$mul);
 
   }
-  if(var_dump(isset($hd)){
   	  $conthd = "SELECT valor FROM armazenamento WHERE id='$hd'";
   $resulthd = mysqli_query($conexao, $conthd);
     while ($linhahd = mysqli_fetch_assoc($resulthd)) {
       $h = $linhahd["valor"];
 		$final = $final + $h;
  }
-}
-    if(var_dump(isset($ssd)){
   	  $contssd = "SELECT valor FROM armazenamento WHERE id='$ssd'";
   $resultssd = mysqli_query($conexao, $contssd);
     while ($linhassd = mysqli_fetch_assoc($resultssd)) {
       $g = $linhassd["valor"];
 		$final = $final + $g;
   }
-}
-    if(var_dump(isset($placadevideo)){
    $contplacadevideo = "SELECT valor FROM placadevideo WHERE id='$placadevideo'";
   $resultplacadevideo = mysqli_query($conexao, $contplacadevideo);
     while ($linhaplacadevideo = mysqli_fetch_assoc($resultplacadevideo)) {
       $v = $linhaplacadevideo["valor"];
 		$final = $final + $v;
   }
-}
     	  $contfonte = "SELECT valor FROM fontes WHERE id='$fonte'";
   $resultfonte = mysqli_query($conexao, $contfonte);
     while ($linhafonte = mysqli_fetch_assoc($resultfonte)) {
       $f = $linhafonte["valor"];
 		$final = $final + $f;
 	}
-    if(var_dump(isset($gabinete)){
       	  $contgab = "SELECT valor FROM gabinetes WHERE id='$gabinete'";
   $resultgab = mysqli_query($conexao, $contgab);
     while ($linhagab = mysqli_fetch_assoc($resultgab)) {
       $g = $linhagab["valor"];
 		$final = $final + $g;
 	}
-}
 echo "O valor dessas peças será uma média de R$$final reais";
 
 ?>
