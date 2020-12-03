@@ -12,7 +12,6 @@ include "funcao.php";
   <link rel="stylesheet" href="/css/master.css">
   <link rel="icon" type="image/png" href="logos/Logo do Titulo.png" />
   <link rel="stylesheet" href="cssmontagemcss.css">
-  <script src="jquery-3.5.1.min.js"></script>
 </head>
 <script>
 window.addEventListener("scroll", function() {
