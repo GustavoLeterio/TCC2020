@@ -4,10 +4,11 @@
   box-sizing: border-box;
   font-family: arial, sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
-  background: #000;
-  min-height: 100vh;
+  background: url(background.png);
   height: 100%;
 }
 
@@ -70,11 +71,11 @@ header ul li a {
 .sec {
   display: flex;
   align-items: center;
-  min-height: 100vh;
   flex-direction: column;
   width: 100%;
   background: url(background.png);
   background-size: cover;
+  margin-bottom: 20vh;
 }
 
 .sec .frase {
@@ -95,36 +96,53 @@ header ul li a {
   line-height: 80px;
   vertical-align: middle;
 }
-
 .sec .box-body {
-  max-height: 100%;
+  padding-right: 2vw;
+  padding-top: 5vh;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px;
+  row-gap: 8vh;
+  column-gap: 5vh;
+  align-items: center;
   display: grid;
-  min-height: 100vh;
 }
 
 .sec .box {
-  background: #060012;
+  max-width: 100vw;
   position: relative;
-  width: 80vw;
-  height: 270px;
-  display: grid;
-  grid-template-columns: 270px auto;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   transition: 0.5s;
 }
 
+.sec .box:hover  {
+  height: 350px;
+}
+
 .sec .box .imgBx {
   background: #060012;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   padding: 10px;
+  box-sizing: border-box;
   z-index: 1
 }
 
 .sec .box .imgBx img {
-  width: 250px;
+  max-width: 100%;
+  opacity: 0.65;
   transition: 0.5s;
+}
+
+.sec .box:hover .imgBx img {
+  opacity: 1;
 }
 
 .sec .box:before {
@@ -188,55 +206,45 @@ header ul li a {
   background: linear-gradient(315deg, #ff03cd, #010615, #ff0000);
 }
 
-.content-wrapper {
-  background: #060012;
-  z-index: 1;
-  width: 80vw;
-}
-
 .sec .box .content {
-  position: relative;
-  padding: 0;
-  margin-top: 10px;
-  margin-left: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
   transition: 0.5s;
   z-index: 1;
 }
-.nome{
-  margin: 10px 0 0 15px;
 
+.sec .box:hover .content {
+  opacity: 1;
+}
+
+.sec .box .content h2 {
+  text-align: center;
+  font-family: CaviarDreamsBold;
+  font-size: 20px;
+  color: #fff;
   font-weight: 500;
-  font-size: 25px;
-  font-family: CaviarDreams;
-  color: white;
-}
-.sec .box .content .caracteristicas {
-  height: 80%;
-  color: white;
-  font-size: 25px;
-  font-family: Arial;
-  font-weight: 0;
-  font-family: CaviarDreams;
-  max-width: 95%;
-  text-align: justify;
+  line-height: 20px;
+  letter-spacing: 1px;
 }
 
-.sec .box .content .caracteristicas .selecioneoseu {
-  color: rgb(222, 193, 252);
+.sec .box .content h2 span {
   font-family: CaviarDreams;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 2px;
 }
 
-.preço {
-  color: white;
-  font-family: CaviarDreams;
-  float: right;
-}
-
-.quantiadepeças {
-  color: white;
-  font-family: CaviarDreams;
-  font-size: 30px;
-}
 .footer {
   background-color: rgb(27, 20, 34);
   overflow: hidden;
@@ -268,7 +276,7 @@ header ul li a {
 
 .footer .tcc {
   float: right;
-  padding: 3% 7.5% 0 0;
+  padding: 3% 10% 0 0;
 }
 
 .footer .tcc h2 {
@@ -280,55 +288,10 @@ header ul li a {
   justify-content: center;
   text-align: center;
 }
+
 @media only screen and (max-width:1280px) {
   .footer .redes li {
     font-size: 35px;
-  }
-
-  .footer .tcc h2 {
-    font-size:35px;
-  }
-
-  .footer .tcc {
-    padding: 7% 4.5% 0 0;
-  }
-
-  .sec .frase {
-    font-size: 25px;
-  }
-
-  .sec .box .content .caracteristicas {
-    font-size: 22px;
-  }
-
-  .sec .frase span {
-    line-height: 80px;
-    font-size: 90px;
-  }
-  .preço{
-      left: 77%;
-  }
-}
-
-@media only screen and (max-width:1024px) {
-  .footer .redes li {
-    font-size: 25px;
-  }
-
-  .sec .box .content .selectComponente {
-    font-size: 25px;
-  }
-
-  .sec .box .content .preço {
-    left: 67%;
-  }
-
-  .quantiadepeças {
-    font-size: 25px;
-  }
-
-  .sec .box .content .caracteristicas {
-    font-size: 20px;
   }
 
   .footer .tcc h2 {
@@ -341,6 +304,48 @@ header ul li a {
 
   .sec .frase {
     font-size: 25px;
+  }
+
+  .sec .frase span {
+    line-height: 80px;
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .footer .redes li {
+    font-size: 25px;
+  }
+
+  .footer .tcc h2 {
+    font-size: 30px;
+  }
+
+  .footer .tcc {
+    padding: 10% 5% 0 0;
+  }
+
+  .sec .frase {
+    font-size: 25px;
+  }
+.footer{
+  margin-top: 9vh;
+}
+  .sec .box-body {
+    column-gap: 0vw;
+    row-gap: 1vh;
+    padding: 0;
+    padding-top: 3vh;
+    padding-left: 1vw;
+  }
+
+  .sec .box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sec .box:hover {
+    height: 300px;
   }
 
   .sec .frase span {
@@ -368,34 +373,34 @@ header ul li a {
   .footer .tcc {
     padding: 10% 5% 0 0;
   }
-
-  .sec .box-body {
-    min-height: auto;
-  }
-
+.footer{
+  margin-top: 5vh;
+}
   .sec .frase {
-    font-size: 25px;
-  }
-
-  .sec .box .content .selectComponente {
-    font-size: 30px;
-  }
-
-  .sec .box .content .caracteristicas {
     font-size: 20px;
-  }
-
-  .sec .box .content .caracteristicas .preço {
-    top: 85%;
-    left: 73%;
-  }
-
-  .quantiadepeças {
-    font-size: 25px;
   }
 
   .sec .frase span {
     font-size: 100px;
+  }
+
+  .sec .box-body {
+    padding-top: 0;
+    margin-left: 50px;
+    grid-template-columns: 400px 400px ;
+    grid-template-rows:400px 400px 400px 400px;
+    column-gap: 0vw;
+    padding-top: 5vh;
+    padding-bot: 0;
+
+  }
+  .sec .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sec .box:hover {
+    height: 400px;
   }
 
   header {
@@ -413,24 +418,6 @@ header ul li a {
   header ul li a {
     font-size: 1.85vw;
   }
-
-  .sec .box {
-    width: 90vw;
-    grid-template-columns: 200px auto;
-    height: 200px;
-  }
-
-  .sec .box .imgBx img {
-    max-width: 180px;
-  }
-
-  #caracteristicasMemoriaram {
-    font-size: 17px;
-  }
-  .button{
-    text-align: center;
-    width: 40vw;
-  }
 }
 
 @font-face {
@@ -439,11 +426,11 @@ header ul li a {
 }
 
 @font-face {
-  font-family: Harukaze;
-  src: url('Harukaze.ttf');
+  font-family: CaviarDreamsBold;
+  src: url('CaviarDreams.ttf');
 }
 
 @font-face {
-  font-family: NeonTubes;
-  src: url('NeonTubes2.otf');
+  font-family: Harukaze;
+  src: url('Harukaze.ttf');
 }

@@ -510,7 +510,9 @@ header ul li a {
     top: 85%;
     left: 73%;
   }
-
+  .descrição{
+      max-width: 50vw;
+  }
   .quantiadepeças {
     font-size: 25px;
   }

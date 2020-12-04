@@ -212,7 +212,6 @@ header ul li a {
   font-weight: 0;
   font-family: CaviarDreams;
   max-width: 95%;
-  text-align: justify;
 }
 
 .sec .box .content .caracteristicas .selecioneoseu {
@@ -324,33 +323,47 @@ header ul li a {
   box-shadow: 0 0 70px 1px rgb(145, 40, 209, 1);
 }
 .alert {
-  position: static;
+  margin-top: 5%;
   padding: 20px;
   background-color: #f44336;
   color: white;
+  width: 80vw;
+  border-radius: 5px;
+  font-size: 40px;
+}
+.alert .alertText{
+  font-size: 40px;
+  font-family: CaviarDreams;
+  margin-right:5px;
 }
 
 .closebtn {
-  margin-left: 15px;
   color: white;
   font-weight: bold;
   float: right;
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 60px;
+  line-height: 0px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  margin:10px 0 0 0px;
 }
 
 .closebtn:hover {
-  font-size: 45px;
+  text-shadow: 0 0 5px black;
 }
-.footer {
-  background-color: rgb(27, 20, 34);
-  overflow: hidden;
+.erroHREF{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: CaviarDreams;
 }
 
 .footer .redes {
   display: table-row;
+}
+.footer {
+  background-color: rgb(27, 20, 34);
+  overflow: hidden;
 }
 
 .footer .redes li {
@@ -399,7 +412,9 @@ header ul li a {
   .footer .tcc {
     padding: 7% 4.5% 0 0;
   }
-
+  .descrição{
+      max-width: 80%;
+  }
   .sec .frase {
     font-size: 25px;
   }
@@ -421,7 +436,9 @@ header ul li a {
   .footer .redes li {
     font-size: 25px;
   }
-
+  .descrição{
+      max-width: 65%;
+  }
   .sec .box .content .selectComponente {
     font-size: 25px;
   }
@@ -496,7 +513,9 @@ header ul li a {
     top: 85%;
     left: 73%;
   }
-
+  .descrição{
+      max-width: 70%;
+  }
   .quantiadepeças {
     font-size: 25px;
   }

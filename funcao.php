@@ -149,13 +149,19 @@ function fonteAtualiza($id)
 function gabineteAtualiza($id)
 {
   include "conexao.php";
-  $sql = "SELECT nome,valor FROM gabinetes WHERE id='$id'";
+  $sql = "SELECT nome,valor,tipo,expansao,portas,baias FROM gabinetes WHERE id='$id'";
   $result = mysqli_query($conexao, $sql);
   if (mysqli_num_rows($result) > 0) {
     while ($linha = mysqli_fetch_assoc($result)) {
-      $d = $linha["nome"];
+      $d = $linha["tipo"];
+      $e = $linha["expansao"];
+      $p = $linha["portas"];
+      $b = $linha["baias"];
       $v = $linha["valor"];
-      echo "<div class='descrição' style='font-family:CaviarDreams;'>$d</div>";
+      echo "<div class='descrição' style='font-family:CaviarDreams;'>Tipo de Fonte -> $d</div>";
+      echo "<div class='descrição' style='font-family:CaviarDreams;'>Baias Internas -> $e</div>";
+      echo "<div class='descrição' style='font-family:CaviarDreams;'>Expansão Traseira -> $b</div>";
+      echo "<div class='descrição' style='font-family:CaviarDreams;'>Portas Frontais -> $p</div>";
       echo "<div class='preço'>R$$v reais</div>";
     }
   }
@@ -169,7 +175,7 @@ function placamaeCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d1 = $linha["nome"];
       $a = $linha["valor"];
-	    echo "<div class='nome'>$d1</div>";
+	    echo "<div class='nome'>$d1<div class='preço'>R$$a reais</div></div>";
     }
   }
 }
@@ -182,7 +188,7 @@ function processadorCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d2 = $linha["nome"];
       $b = $linha["valor"];
-	    echo "<div class='nome'>$d2</div>";
+	    echo "<div class='nome'>$d2<div class='preço'>R$$b reais</div></div>";
     }
   }
 }
@@ -195,7 +201,7 @@ function memoriaramCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d3 = $linha["nome"];
       $c = $linha["valor"];
-	    echo "<div class='nome'>$d3</div>";
+	    echo "$d3<div class='preço'>R$$c reais</div>";
     }
   }
 }
@@ -208,7 +214,7 @@ function hdCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d4 = $linha["nome"];
       $d = $linha["valor"];
-     echo "<div class='nome'>$d4</div>";
+     echo "<div class='nome'>$d4<div class='preço'>R$$d reais</div></div>";
     }
   }
 }
@@ -221,7 +227,7 @@ function ssdCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d5 = $linha["nome"];
       $e = $linha["valor"];
-	    echo "<div class='nome'>$d5</div>";
+	    echo "<div class='nome'>$d5<div class='preço'>R$$e reais</div></div>";
     }
   }
 }
@@ -235,7 +241,7 @@ function placadevideoCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d6 = $linha["nome"];
       $h = $linha["valor"];
-	    echo "<div class='nome'>$d6</div>";
+	    echo "<div class='nome'>$d6<div class='preço'>R$$h reais</div></div>";
     }
   }
 }
@@ -248,7 +254,7 @@ function fonteCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d7 = $linha["nome"];
       $i = $linha["valor"];
-	    echo "<div class='nome'>$d7</div>";
+	    echo "<div class='nome'>$d7<div class='preço'>R$$i reais</div></div>";
     }
   }
 }
@@ -261,7 +267,7 @@ function gabineteCalcula($id)
     while ($linha = mysqli_fetch_assoc($result)) {
       $d8 = $linha["nome"];
       $j = $linha["valor"];
-	    echo "<div class='nome'>$d8</div>";
+	    echo "<div class='nome'>$d8<div class='preço'>R$$j reais</div></div>";
     }
   }
 }

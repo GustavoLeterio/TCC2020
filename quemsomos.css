@@ -8,7 +8,6 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  background: #000;
   height: 100%;
 }
 
@@ -73,8 +72,9 @@ header ul li a {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background: url(background.png);
+
   background-size: cover;
+  margin-bottom: 20vh;
 }
 
 .sec .frase {
@@ -247,7 +247,6 @@ header ul li a {
 .footer {
   background-color: rgb(27, 20, 34);
   overflow: hidden;
-    margin-top:20vh;
 }
 
 .footer .redes {

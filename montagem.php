@@ -10,7 +10,7 @@ include "funcao.php";
   <title>Purple Wolf</title>
   <link rel="stylesheet" href="/css/master.css">
   <link rel="icon" type="image/png" href="logos/Logo do Titulo.png" />
-  <link rel="stylesheet" href="cssmontagemcss.css">
+  <link rel="stylesheet" href="cssmontagem.css">
 </head>
 <script  type="text/javascript">
 window.addEventListener("scroll", function() {
@@ -50,7 +50,7 @@ function placamaeUpdate() {
   var select = document.getElementById('placamae');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '1000':
+    case '0':
     return 0;
     break;
     case '1':
@@ -80,7 +80,7 @@ function processadorUpdate() {
   var select = document.getElementById('processador');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '1000':
+    case '0':
     return 0;
     break;
     case '1':
@@ -150,7 +150,7 @@ function memoriaramUpdate() {
   var select = document.getElementById('memoriaram');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '1000':
+    case '0':
     return 0;
     break;
     case '1':
@@ -363,7 +363,7 @@ function fonteUpdate() {
   var select = document.getElementById('fonte');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '1000':
+    case '0':
     return 0;
     break;
     case '1':
@@ -479,14 +479,14 @@ function gabineteUpdate() {
 
 <body>
   <header>
-    <a href="index.html" class="logo"><img src="logos/Logo com Nome.png" alt="Página Inicial" width="300vw;"></a>
+    <a href="index.html" class="logo"><img src="logos/Logo com Nome.png" title="Volte a Página Inicial" alt="Página Inicial" width="300vw;"></a>
     <ul>
       <li><a href="#">Montagem</a></li>
       <li><a href="sugestoes.html">Sugestões</a></li>
       <li><a href="quemsomos.html">Quem Somos</a></li>
     </ul>
   </header>
-  <form id="form" action="envia.php" method="post">
+  <form id="form" action="verificar.php" method="post">
     <section class="sec">
       <div class="frase" id="frase">
         Conforme o tempo passa a tecnologia vem evoluindo muito, e muita coisa vai mudando e se tornando mais viável, melhor ou mais barata que outras,
@@ -502,7 +502,7 @@ function gabineteUpdate() {
             <div class="content">
               <div class="select" id="selectPlacamae">
                 <select class="selectComponente" id="placamae" onChange="placamaeUpdate()" name="placamae">
-                  <option value="1000" disabled selected hidden><div class="select" >Placas Mães</div></option>
+                  <option value="0" disabled selected hidden><div class="select" >Placas Mães</div></option>
                   <option value="1">A320M (RYZEN AM4)</option>
                   <option value="2">B450M (RYZEN AM4)</option>
                   <option value="3">H310M (INTEL 9ª LGA 1151)</option>
@@ -524,7 +524,7 @@ function gabineteUpdate() {
               <div class="content">
                 <div class="select" id="selectProcessador">
                   <select class="selectComponente" id="processador" onChange="processadorUpdate()" name="processador">
-                    <option value="1000" disabled selected hidden>Processadores</option>
+                    <option value="0" disabled selected hidden>Processadores</option>
                     <option disabled>Processadores Ryzen</option>
                     <option value="1">Ryzen 3 3200G</option>
                     <option value="2">Ryzen 3 3300X</option>
@@ -557,7 +557,7 @@ function gabineteUpdate() {
               <div class="content">
                 <div class="select" id="selectMemoriaRam">
                   <select class="selectComponente" id="memoriaram" onChange="memoriaramUpdate()" name="memoriaram">
-                    <option value="1000" disabled selected hidden>Memórias Ram</option>
+                    <option value="0" disabled selected hidden>Memórias Ram</option>
                     <option value="1">HyperX Fury 4GB 2400MHz DDR4</option>
                     <option value="2">HyperX Fury 4GB 2666MHz DDR4</option>
                     <option value="3">HyperX Fury 8GB 2666MHz DDR4</option>
@@ -684,7 +684,7 @@ function gabineteUpdate() {
                       <div class="content">
                         <div class="select" id="selectFonte">
                           <select class="selectComponente"id="fonte" name="fonte" onChange="fonteUpdate()">
-                            <option value="1000" disabled selected hidden>Fontes</option>
+                            <option value="0" disabled selected hidden>Fontes</option>
                             <option disabled>450W</option>
                             <option value="1">EVGA 450W</option>
                             <option value="2">Corsair CV450 450W</option>
@@ -730,7 +730,7 @@ function gabineteUpdate() {
                               <option value="7">K-mex Atlantis IV</option>
                               <option value="8">DeepCool Macube 310 WH</option>
                               <option value="9">Gamdias Talos M1B</option>
-							                <option value="1000">Nenhum</option>
+							  <option value="1000">Nenhum</option>
                             </select>
                           </div>
                           <div class="caracteristicas" id="caracteristicasGabinete"> Está é o container que manterá seu computador, nele não só estará a beleza externa do seu computador como também será responsável por manter seu pc frio,
@@ -744,7 +744,7 @@ function gabineteUpdate() {
                       <div class="alertText" id="alertText">texto a ser alterado</div>
                     </div>
                     <a class="button" id="teste" onclick="verifica()">Enviar PC</a>
-                    <button type="submit" style="display:none;" id="envia"  value="Submit">Enviar PC</button>
+                    <button type="submit" id="envia" style="display:none;" value="Submit">Enviar PC</button>
 
                 </section>
                 <footer class="footer">
