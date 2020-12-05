@@ -57,7 +57,18 @@ function memoriaramAtualiza($id)
       echo "<div class='descrição' style='font-family:CaviarDreams; font-size:20px;'>Capacidade -> $c</div>";
       echo "<div class='descrição' style='font-family:CaviarDreams; font-size:20px;'>Velocidade -> $vel</div>";
       echo "<div class='descrição' style='font-family:CaviarDreams; font-size:20px;'>Tipo -> $t</div>";
-      echo "<div class='preço'>R$$v reais</div>";
+      echo "<div class='preço'id='preçoMMRRAM'>R$$v reais</div>";
+    }
+  }
+}
+function memoriaramPreçoAtualiza($id){
+  include "conexao.php";
+  $sql = "SELECT valor FROM memoriaram WHERE id='$id'";
+  $result = mysqli_query($conexao, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    while ($linha = mysqli_fetch_assoc($result)) {
+      $v = $linha["valor"];
+      echo " R$$v reais";
     }
   }
 }

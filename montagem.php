@@ -10,7 +10,7 @@ include "funcao.php";
   <title>Purple Wolf</title>
   <link rel="stylesheet" href="/css/master.css">
   <link rel="icon" type="image/png" href="logos/Logo do Titulo.png" />
-  <link rel="stylesheet" href="cssmontagem.css">
+  <link rel="stylesheet" href="montagem.css">
 </head>
 <script  type="text/javascript">
 window.addEventListener("scroll", function() {
@@ -156,42 +156,52 @@ function memoriaramUpdate() {
     case '1':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 1); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 1); ?>";
     break;
     case '2':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 2); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 2); ?>";
     break;
     case '3':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 3); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 3); ?>";
     break;
     case '4':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 4); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 4); ?>";
     break;
     case '5':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 5); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 5); ?>";
     break;
     case '6':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/6.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 6); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 6); ?>";
     break;
     case '7':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/7.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 7); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 7); ?>";
     break;
     case '8':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/8.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 8); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 8); ?>";
     break;
     case '9':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/9.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 9); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 9); ?>";
     break;
     case '10':
     document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/10.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 10); ?>";
+    document.getElementById("preçoMMRRAM").innerHTML = slider.value + "x <?php memoriaramPreçoAtualiza($id = 10); ?>";
     break;
   }
 
@@ -592,7 +602,8 @@ function gabineteUpdate() {
                     output.innerHTML = slider.value;
                     slider.oninput = function vrau() {
                       output.innerHTML = this.value;
-                    }
+                      memoriaramUpdate();
+                  }
                   </script>
                 </div>
               </div>
@@ -766,9 +777,9 @@ function gabineteUpdate() {
                     </li>
                   </ul>
                   <ul class="redes">
-                    <li><a href="www.facebook.com" target="_blank"><img src="logos/facebooklogo.png" width="100px">www.facebook.com/PurpleWolfOficial</a></li>
-                    <li><a href="www.instagram.com" target="_blank"><img src="logos/instagramlogo.png" width="100px">www.instagram.com/PurpleWolfOficial</a></a></li>
-                    <li><a href="www.twitter.com" target="_blank"><img src="logos/twitterlogo.png" width="100px">www.twitter.com/PurpleWolfOficial</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="logos/facebooklogo.png" width="100px">www.facebook.com/PurpleWolfOficial</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="logos/instagramlogo.png" width="100px">www.instagram.com/PurpleWolfOficial</a></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="logos/twitterlogo.png" width="100px">www.twitter.com/PurpleWolfOficial</a></li>
                   </ul>
                 </footer>
               </body>
