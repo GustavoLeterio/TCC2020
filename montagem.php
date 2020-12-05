@@ -140,7 +140,7 @@ function processadorUpdate() {
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 14); ?>";
     break;
     case '15':
-    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/I9-10900.png";
+    document.getElementById('imagemProcessador').src = "Fotos dos Componentes/Processadores/i9-10900K.png";
     document.getElementById("caracteristicasProcessador").innerHTML = "<?php processadorAtualiza($id = 15); ?>";
     break;
   }
@@ -154,43 +154,43 @@ function memoriaramUpdate() {
     return 0;
     break;
     case '1':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 1); ?>";
     break;
     case '2':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 2); ?>";
     break;
     case '3':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 3); ?>";
     break;
     case '4':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 4); ?>";
     break;
     case '5':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/1-5.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/1-5.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 5); ?>";
     break;
     case '6':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/6.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/6.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 6); ?>";
     break;
     case '7':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/7.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/7.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 7); ?>";
     break;
     case '8':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/8.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/8.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 8); ?>";
     break;
     case '9':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/9.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/9.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 9); ?>";
     break;
     case '10':
-    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/mmrram/10.png";
+    document.getElementById('imagemMemoriaram').src = "Fotos dos Componentes/MemoriaRam/10.png";
     document.getElementById("caracteristicasMemoriaram").innerHTML = "<?php memoriaramAtualiza($id = 10); ?>";
     break;
   }
@@ -202,6 +202,9 @@ function hdUpdate() {
   var option = select.options[select.selectedIndex];
   switch (option.value) {
     case '1000':
+    document.getElementById('imagemHd').src = "Fotos dos Componentes/X.png";
+    document.getElementById("caracteristicasHd").innerHTML = "<div class='descrição' style='font-family:CaviarDreams;'>Você não selecionou nada.</div>";
+    return 0;
     return 0;
     break;
     case '1':
@@ -228,6 +231,9 @@ function ssdUpdate() {
   var option = select.options[select.selectedIndex];
   switch (option.value) {
     case '1000':
+    document.getElementById('imagemSsd').src = "Fotos dos Componentes/X.png";
+    document.getElementById("caracteristicasSsd").innerHTML = "<div class='descrição' style='font-family:CaviarDreams;'>Você não selecionou nada.</div>";
+    return 0;
     return 0;
     break;
     case '5':
@@ -270,6 +276,9 @@ function placadevideoUpdate() {
   var option = select.options[select.selectedIndex];
   switch (option.value) {
     case '1000':
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/X.png";
+    document.getElementById("caracteristicasPlacadevideo").innerHTML = "<div class='descrição' style='font-family:CaviarDreams;'>Você não selecionou nada.</div>";
+    return 0;
     return 0;
     break;
     case '1':
@@ -317,7 +326,7 @@ function placadevideoUpdate() {
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 11); ?>";
     break;
     case '12':
-    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/GTX1660-6GB.png";
+    document.getElementById('imagemPlacadevideo').src = "Fotos dos Componentes/PlacasdeVideo/1660-super-6gb.png";
     document.getElementById("caracteristicasPlacadevideo").innerHTML = "<?php placadevideoAtualiza($id = 12); ?>";
     break;
     case '13':
@@ -363,7 +372,7 @@ function fonteUpdate() {
   var select = document.getElementById('fonte');
   var option = select.options[select.selectedIndex];
   switch (option.value) {
-    case '0':
+    case '1000':
     return 0;
     break;
     case '1':
@@ -435,6 +444,8 @@ function gabineteUpdate() {
   var option = select.options[select.selectedIndex];
   switch (option.value) {
     case '1000':
+    document.getElementById('imagemGabinete').src = "Fotos dos Componentes/X.png";
+    document.getElementById("caracteristicasGabinete").innerHTML = "<div class='descrição' style='font-family:CaviarDreams;'>Você não selecionou nada.</div>";
     return 0;
     break;
     case '1':
@@ -496,7 +507,7 @@ function gabineteUpdate() {
       <div class="box-body">
         <div class="box">
           <div class="imgBx">
-            <img id="imagemPlacamae" src="interrogação.png">
+            <img id="imagemPlacamae" src="Fotos dos Componentes/interrogação.png">
           </div>
           <div class="content-wrapper">
             <div class="content">
@@ -518,7 +529,7 @@ function gabineteUpdate() {
           <!-- FOTO 2-->
           <div class="box">
             <div class="imgBx">
-              <img id="imagemProcessador" src="interrogação.png">
+              <img id="imagemProcessador" src="Fotos dos Componentes/interrogação.png">
             </div>
             <div class="content-wrapper">
               <div class="content">
@@ -551,7 +562,7 @@ function gabineteUpdate() {
           <!-- FOTO 3-->
           <div class="box">
             <div class="imgBx">
-              <img id="imagemMemoriaram" src="interrogação.png">
+              <img id="imagemMemoriaram" src="Fotos dos Componentes/interrogação.png">
             </div>
             <div class="content-wrapper">
               <div class="content">
@@ -589,7 +600,7 @@ function gabineteUpdate() {
             <!-- FOTO 4-->
             <div class="box">
               <div class="imgBx">
-                <img id="imagemHd" src="interrogação.png">
+                <img id="imagemHd" src="Fotos dos Componentes/interrogação.png">
               </div>
               <div class="content-wrapper">
                 <div class="content">
@@ -610,7 +621,7 @@ function gabineteUpdate() {
               </div>
               <div class="box">
                 <div class="imgBx">
-                  <img id="imagemSsd" src="interrogação.png">
+                  <img id="imagemSsd" src="Fotos dos Componentes/interrogação.png">
                 </div>
                 <div class="content-wrapper">
                   <div class="content">
@@ -635,7 +646,7 @@ function gabineteUpdate() {
                 </div>
                 <div class="box">
                   <div class="imgBx">
-                    <img id="imagemPlacadevideo" src="interrogação.png">
+                    <img id="imagemPlacadevideo" src="Fotos dos Componentes/interrogação.png">
                   </div>
                   <div class="content-wrapper">
                     <div class="content">
@@ -678,7 +689,7 @@ function gabineteUpdate() {
                   <!-- FOTO 6-->
                   <div class="box">
                     <div class="imgBx">
-                      <img id="imagemFonte" src="interrogação.png">
+                      <img id="imagemFonte" src="Fotos dos Componentes/interrogação.png">
                     </div>
                     <div class="content-wrapper">
                       <div class="content">
@@ -714,7 +725,7 @@ function gabineteUpdate() {
                     </div>
                     <div class="box">
                       <div class="imgBx">
-                        <img id="imagemGabinete" src="interrogação.png">
+                        <img id="imagemGabinete" src="Fotos dos Componentes/interrogação.png">
                       </div>
                       <div class="content-wrapper">
                         <div class="content">
